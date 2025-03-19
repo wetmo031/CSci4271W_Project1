@@ -11,3 +11,13 @@ If you want to change the number of requests, change the attacks variable in the
 bcbmc noauth &
 python3 DoSAttack.py
 ```
+
+## Brute Forcing - Spoofing
+
+After the bcbmc server is initialized and an authentication code is set, a simple python script can exploit the lack of possible auth code combinations and no rate limiting protections. By running python3 brute_force.py, pointed by default to the bcbmc server, it will quickly find the proper authentication code and return it to the attacker.
+
+On an already initialized server:
+```bash
+python3 brute_force.py
+```
+
