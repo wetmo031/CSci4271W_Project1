@@ -7,6 +7,7 @@ To do so, run the bcbmc noauth & command to run the server in the background.
 Then by running the DoSAttack.py file, it will send 1000 requests to the server.
 If you want to change the number of requests, change the attacks variable in the DoSAttack.py file. Additionally, if the serve is not running in noauth mode, the attack will not work as you need the correct auth code.
 When running this script, it will effectively tamper with the bookmarks on record and deny the user the ability to effectively use their bookmark program.
+Also, there is a section commented out where you can effectively add infinite bookmarks to the program, which maximises the malicousness of this attack. 
 
 ```bash
 bcbmc noauth &
